@@ -2,7 +2,6 @@ import { ScrollView, View, Text, FlatList,ImageBackground, TouchableOpacity,Imag
 import React from 'react'
 import { SafeAreaView } from 'react-native-safe-area-context'
 import { images } from '../../constants';
-import CustomButton from '../../components/CustomButton'
 import { icons } from "../../constants"
 
 const transactions = [
@@ -59,19 +58,22 @@ const homepage = () => {
     <SafeAreaView className="bg-white h-full">
       <ScrollView>
         <View className="w-full h-full px-4 my-6">
-
           <View style={[{position: 'relative'}, styles.card]}>
-            <View style={[{position: 'absolute'}, styles.cardDetails]}>
+            <View style={[{position: 'absolute'}, styles.cardDetails]} className="w-[339]">
+              <View style={{ left: '82%' }}>
+                <TouchableOpacity activeOpacity={0.8}>
+                  <Image source={images.scanButton}/>
+                </TouchableOpacity>
+              </View>
               <Text style={styles.cardText} className="font-bInter">Michael Collins</Text>
               <Text style={[{fontSize: 36,  fontWeight: 600}, styles.cardText]} className="font-sbInter">786349758</Text>
-              <View style={styles.lowerCard}>
+              <View style={styles.lowerCard} className="flex-row justify-between">
                 <Text style={styles.cardText} className="font-sbInter">Player Card ID</Text>
                 <Text style={styles.cardText} className="font-sbInter">11 / 2025</Text>
               </View>
             </View>
             <Image source={images.card}/>
           </View>
-
           <View style={styles.container}>
             <View style={styles.item}>
               <TouchableOpacity activeOpacity={0.8} style={styles.button}>
@@ -139,6 +141,7 @@ export default homepage
 
 const styles = StyleSheet.create({
   container: {
+    marginTop: 18,
     flexDirection: 'row',
     flexWrap: 'wrap',
     justifyContent: 'space-between',
@@ -167,8 +170,8 @@ const styles = StyleSheet.create({
   cardDetails: {
     zIndex: 5,
     padding: 32,
-    height: '210px',
-    width: '339px',
+    // height: '210px',
+    // width: '339px',
     bordeRadius: '18px',
     
   },
@@ -177,5 +180,9 @@ const styles = StyleSheet.create({
     color: '#FFFFFF',
     fontWeight: 700,
     textTransform: 'uppercase'
+  },
+
+  lowerCard: {
+    flexDirection: 'row', justifyContent: 'space-between' 
   }
 });
