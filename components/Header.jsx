@@ -6,14 +6,13 @@ const Header = ({leftImage, rightImage, title, textStyles, handlePress, imageSty
   return (
    <SafeAreaView className="bg-white px-4">
     <View className="flex-row justify-between align-center items-center">
-      <TouchableOpacity activeOpacity={0.8}>
+      <TouchableOpacity activeOpacity={0.8} onPress={handlePress}>
         <Image source={leftImage}/>
       </TouchableOpacity>
       <View className=" ">
         <Text className={`${textStyles}`}>{title}</Text>
       </View>
-      <TouchableOpacity activeOpacity={0.8}
-      onPress={handlePress}>
+      <TouchableOpacity activeOpacity={0.5} onPress={handlePress}>
         <Image source={rightImage} className={`${imageStyles}`}/>
       </TouchableOpacity>
     </View>
