@@ -3,7 +3,7 @@ import React from 'react'
 import { SafeAreaView } from 'react-native-safe-area-context'
 import { images } from '../../constants';
 import { icons } from "../../constants"
-
+import Header from '../../components/Header'
 const transactions = [
   {
   id: 0,
@@ -56,6 +56,12 @@ const transactions = [
 const homepage = () => {
   return (
     <SafeAreaView className="bg-white h-full">
+      <Header 
+        title="XBank" 
+        textStyles="text-4xl font-bcomfortaa mt-2"
+        rightImage={require('../../assets/images/user-profile.png')}
+        leftImage={require('../../assets/images/icon-settings.png')}
+      />
       <ScrollView>
         <View className="w-full h-full px-4 my-6">
           <View style={[{position: 'relative'}, styles.card]}>
