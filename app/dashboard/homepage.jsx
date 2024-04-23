@@ -3,6 +3,7 @@ import React from 'react'
 import { SafeAreaView } from 'react-native-safe-area-context'
 import { images } from '../../constants';
 import { icons } from "../../constants"
+import { router } from 'expo-router';
 import Header from '../../components/Header'
 const transactions = [
   {
@@ -57,10 +58,11 @@ const homepage = () => {
   return (
     <SafeAreaView className="bg-white h-full">
       <Header 
+        handlePress={() => router.push('dashboard/settings')}
         title="XBank" 
-        textStyles="text-4xl font-bcomfortaa mt-2"
-        rightImage={require('../../assets/images/user-profile.png')}
-        leftImage={require('../../assets/images/icon-settings.png')}
+        textStyles="text-4xl font-bcomfortaa"
+        leftImage={require('../../assets/images/user-profile.png')}
+        rightImage={require('../../assets/images/icon-settings.png')}
       />
       <ScrollView>
         <View className="w-full h-full px-4 my-6">

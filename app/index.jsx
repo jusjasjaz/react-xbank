@@ -11,7 +11,7 @@ export default function App() {
         <View className="w-full justify-center items-center h-full px-4">
           <Text className="text-4xl font-rcomfortaa">XBank</Text>
           {/* <CustomButton title="Continue" handlePress={() => router.push('auth/sign-in')} containerStyles="w-full mt-7 bg-[#232325]"/> */}
-          <CustomButton title="Continue" handlePress={() => router.push('dashboard/homepage')} containerStyles="w-full mt-7 bg-[#232325]"/>
+          <CustomButton title="Continue" handlePress={() => router.push('dashboard/settings')} containerStyles="w-full mt-7 bg-[#232325]"/>
         </View>
       </ScrollView>
     </SafeAreaView>

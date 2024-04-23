@@ -5,6 +5,12 @@ import cashIn from "../assets/icons/icon-cash-in.png";
 import cashOut from "../assets/icons/icon-cash-out.png";
 import scan from "../assets/icons/icon-scan.png";
 import more from "../assets/icons/icon-more.png";
+import arrow from "../assets/icons/icon-arrow.png"
+import notifications from "../assets/icons/icon-notification.png"
+import receipts from "../assets/icons/icon-receipt.png"
+import faceID from "../assets/icons/icon-face-id.png"
+import help from "../assets/icons/icon-help.png"
+import logout from "../assets/icons/icon-logout.png"
 export default {
   eye,
   eyeSlash,
@@ -12,5 +18,11 @@ export default {
   cashIn,
   cashOut,
   scan,
-  more
+  more,
+  arrow,
+  notifications,
+  receipts,
+  faceID,
+  help,
+  logout
 };
