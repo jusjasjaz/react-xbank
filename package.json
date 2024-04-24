@@ -13,6 +13,7 @@
   },
   "dependencies": {
     "expo": "~50.0.14",
+    "expo-checkbox": "~2.7.0",
     "expo-constants": "~15.4.6",
     "expo-font": "~11.10.3",
     "expo-linking": "~6.2.2",
@@ -26,7 +27,7 @@
     "react-native-screens": "~3.29.0",
     "react-native-web": "~0.19.6",
     "styled-components": "^6.1.8",
-    "expo-checkbox": "~2.7.0"
+    "toggle-switch-react-native": "^3.3.0"
   },
   "devDependencies": {
     "@babel/core": "^7.20.0",

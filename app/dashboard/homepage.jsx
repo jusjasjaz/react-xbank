@@ -58,11 +58,14 @@ const homepage = () => {
   return (
     <SafeAreaView className="bg-white h-full">
       <Header 
-        handlePress={() => router.push('dashboard/settings')}
         title="XBank" 
         textStyles="text-4xl font-bcomfortaa"
         leftImage={require('../../assets/images/user-profile.png')}
+        handlePressLeft={() => router.push('dashboard/profile')}
+        leftImageStyles="w-12	h-12"
         rightImage={require('../../assets/images/icon-settings.png')}
+        handlePressRight={() => router.push('dashboard/settings')}
+        rightImageStyles="w-12	h-12"
       />
       <ScrollView>
         <View className="w-full h-full px-4 my-6">
@@ -164,7 +167,7 @@ const styles = StyleSheet.create({
     borderRadius: 20,
     overflow: 'hidden',
     backgroundColor: '#DFDFDF',
-    height: 96, // Adjust as needed for height
+    height: 84, // Adjust as needed for height
   },
 
   card: {

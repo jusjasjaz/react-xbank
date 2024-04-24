@@ -17,8 +17,8 @@ const SignIn = () => {
     <SafeAreaView className="bg-white h-full">
       <ScrollView>
         <View className="w-full h-full px-4 my-6">
-          <Text className="text-4xl font-bcomfortaa pt-20">XBank</Text>
-          <Text className="text-[#413C3CCC] font-sbInter pb-20">Sign in to your account.</Text>
+          <Text className="text-4xl font-bcomfortaa pt-16">XBank</Text>
+          <Text className="text-[#413C3CCC] font-sbInter pb-14">Sign in to your account.</Text>
           <FormField 
           title="EMAIL"
           // value={form.email}
