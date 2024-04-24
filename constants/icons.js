@@ -11,6 +11,7 @@ import receipts from "../assets/icons/icon-receipt.png"
 import faceID from "../assets/icons/icon-face-id.png"
 import help from "../assets/icons/icon-help.png"
 import logout from "../assets/icons/icon-logout.png"
+import calendar from "../assets/icons/icon-calendar.png"
 export default {
   eye,
   eyeSlash,
@@ -24,5 +25,6 @@ export default {
   receipts,
   faceID,
   help,
-  logout
+  logout,
+  calendar
 };
