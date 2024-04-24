@@ -15,10 +15,10 @@ const settings = () => {
     <SafeAreaView className="bg-white h-full">
       <Header 
         title="Settings" 
-        textStyles="font-mInter text-xl"
+        textStyles="font-sbInter text-xl"
         leftImage={require('../../assets/images/icon-back.png')}
         handlePressLeft={() => router.push('dashboard/homepage')}
-        rightImageStyles="w-5 h-5"
+        leftImageStyles="w-6 h-6"
       />
       <ScrollView>
         <View className="w-full h-full px-4 my-6">
