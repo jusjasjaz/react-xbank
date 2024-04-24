@@ -68,7 +68,7 @@ const homepage = () => {
         rightImageStyles="w-12	h-12"
       />
       <ScrollView>
-        <View className="w-full h-full px-4 my-6">
+        <View className="w-full h-full px-4 mt-2 mb-6">
           <View style={[{position: 'relative'}, styles.card]}>
             <View style={[{position: 'absolute'}, styles.cardDetails]} className="w-[339]">
               <View style={{ left: '82%' }}>

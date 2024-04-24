@@ -1,6 +1,4 @@
-import { ScrollView, View, Text, KeyboardAvoidingView,
-  Platform, TextInput,
-  Modal,ImageBackground, TouchableOpacity,Image, StyleSheet } from 'react-native'
+import { ScrollView, View, Text, KeyboardAvoidingView, Platform, TextInput, Modal,ImageBackground, TouchableOpacity,Image, StyleSheet } from 'react-native'
 import React from 'react'
 import { SafeAreaView } from 'react-native-safe-area-context'
 import { images } from '../../constants';
@@ -30,6 +28,7 @@ const profile = () => {
   const handleOnPressStartDate = () => {
     setOpenStartDatePicker(!openStartDatePicker);
   };
+
   return (
     <SafeAreaView className="bg-white h-full">
       <Header 
@@ -72,6 +71,7 @@ const profile = () => {
             keyboardType="number-pad"
             returnKeyType="done"
           />
+          {/* calendar */}
           <KeyboardAvoidingView
             behavior={Platform.OS == "ios" ? "padding" : ""}
             style={{ width: "100%", height: "100%", backgroundColor: "#fff" }}>
@@ -99,13 +99,11 @@ const profile = () => {
                   </TouchableOpacity>
                 </View>
               </View>
-
               {/* Create modal for date picker */}
               <Modal
                 animationType="slide"
                 transparent={true}
-                visible={openStartDatePicker}
-              >
+                visible={openStartDatePicker}>
                 <View style={styles.centeredView}>
                   <View style={styles.modalView}>
                     <DatePicker
@@ -116,15 +114,10 @@ const profile = () => {
                       selected={startedDate}
                       onDateChanged={handleChangeStartDate}
                       onSelectedChange={(date) => setSelectedStartDate(date)}
-                      options={{
-                        backgroundColor: "#fff",
-                        textHeaderColor: "#232325",
-                        textDefaultColor: "#333333",
-                        selectedTextColor: "#FFFFFF",
-                        mainColor: "#232325",
-                        textSecondaryColor: "#FFFFFF",
-                        borderColor: "rgba(122, 146, 165, 0.1)",
-                      }}
+                      options={{ backgroundColor: "#fff", textHeaderColor: "#232325", 
+                      textDefaultColor: "#333333", selectedTextColor: "#FFFFFF", 
+                      mainColor: "#232325", textSecondaryColor: "#FFFFFF", 
+                      borderColor: "rgba(122, 146, 165, 0.1)"}}
                     />
                     <TouchableOpacity onPress={handleOnPressStartDate}>
                       <Text style={{ color: "#232325" }} className="font-bInter">Close</Text>
@@ -144,7 +137,6 @@ const profile = () => {
     </SafeAreaView>
   )
 }
-
 export default profile
 
 const styles = StyleSheet.create({
