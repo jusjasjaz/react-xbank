@@ -40,6 +40,20 @@ const profile = () => {
       />
       <ScrollView>
         <View className="w-full h-full px-4 my-6">
+          <View className="flex-row items-center">
+            <View className="relative">
+              <Image className="w-[125px] h-[125px]" source={images.profilePic}/>
+              <View className="absolute inline-block bottom-0 right-0">
+                <TouchableOpacity activeOpacity={0.8}>
+                  <Image className="w-8 h-8" source={icons.camera}/>
+                </TouchableOpacity>  
+              </View>
+            </View>
+            <View className="ml-4">
+              <Text className="font-sbInter text-xl">Michael Collins</Text>
+              <Text className="font-sbInter text-sm	color-[#828282]">mcollins@email.com</Text>
+            </View>
+          </View>
           <FormField 
             title="FIRST NAME"
             // value={form.email}
