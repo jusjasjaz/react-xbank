@@ -158,7 +158,7 @@ const styles = StyleSheet.create({
     justifyContent: 'space-between',
   },
   item: {
-    width: '23%', // Adjust as needed for spacing
+    width: '23%',
     marginBottom: 10,
   },
   button: {
@@ -166,8 +166,9 @@ const styles = StyleSheet.create({
     alignItems: 'center',
     borderRadius: 20,
     overflow: 'hidden',
-    backgroundColor: '#DFDFDF',
-    height: 84, // Adjust as needed for height
+    backgroundColor: '#F1F1F1',
+    width: 84,
+    height: 84, 
   },
 
   card: {
@@ -194,6 +195,7 @@ const styles = StyleSheet.create({
   },
 
   lowerCard: {
-    flexDirection: 'row', justifyContent: 'space-between' 
+    flexDirection: 'row', 
+    justifyContent: 'space-between' 
   }
 });
