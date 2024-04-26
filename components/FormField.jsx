@@ -14,7 +14,7 @@ const FormField = ({title, value, placeholder, handleChangeText, otherStyles, ..
         placeholder={placeholder}
         placeholderTextColor="#cfcfcf"
         onChangeText={handleChangeText}
-        emailIcon = {title === 'EMAIL'}
+        emailIcon = {title === 'EMAIL'}placeholderValue="Michael"
         secureTextEntry = {title === 'PASSWORD' && !showPassword}
         {...props}
         />

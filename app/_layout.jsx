@@ -38,6 +38,9 @@ const RootLayout = () => {
     <Stack.Screen name="dashboard" options={{
       headerShown: false
     }}/>
+    <Stack.Screen name="cash-in" options={{
+      headerShown: false
+    }}/>
    </Stack>
   )
 }

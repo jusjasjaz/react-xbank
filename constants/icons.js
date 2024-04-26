@@ -13,6 +13,7 @@ import help from "../assets/icons/icon-help.png"
 import logout from "../assets/icons/icon-logout.png"
 import calendar from "../assets/icons/icon-calendar.png"
 import camera from "../assets/icons/icon-camera.png"
+import bank from "../assets/icons/icon-bank.png"
 export default {
   eye,
   eyeSlash,
@@ -28,5 +29,6 @@ export default {
   help,
   logout,
   calendar,
-  camera
+  camera,
+  bank
 };

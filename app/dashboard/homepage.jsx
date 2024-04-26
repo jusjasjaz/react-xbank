@@ -87,7 +87,7 @@ const homepage = () => {
           </View>
           <View style={styles.container}>
             <View style={styles.item}>
-              <TouchableOpacity activeOpacity={0.8} style={styles.button}>
+              <TouchableOpacity activeOpacity={0.8} onPress={() => router.push('cash-in/cash-in-page')}  style={styles.button}>
                 <Image source={icons.cashIn}/>
               </TouchableOpacity>
               <View className="flex-row justify-center mt-3">
