@@ -11,6 +11,18 @@ const _layout = () => {
           headerShown: false,
         }}
       />
+      <Stack.Screen 
+        name="cash-in-online"
+        options={{
+          headerShown: false,
+        }}
+      />
+      <Stack.Screen 
+        name="cash-in-success"
+        options={{
+          headerShown: false,
+        }}
+      />
     </Stack>
   )
 }

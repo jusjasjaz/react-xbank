@@ -35,7 +35,7 @@ const cashInPage = () => {
           </View>
           {activeSegment === 'Online' && (
             <View>
-              <TouchableOpacity activeOpacity={0.5}>
+              <TouchableOpacity activeOpacity={0.5} onPress={() => router.push('cash-in/cash-in-online')}>
                 <View className="flex-row justify-between mt-4">
                   <View className="flex-row align-center items-center px-4">
                     <Image className="w-8 h-8 mr-4" source={icons.bank}/>
