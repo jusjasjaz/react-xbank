@@ -9,7 +9,7 @@ const cashInSuccess = () => {
   return (
     <SafeAreaView className="bg-white h-full">
       <View className="py-2">
-        <Text className="text-center font-bcomfortaa text-4xl">XBank</Text>
+        <Text className="text-center font-bcomfortaa text-3xl">XBank</Text>
       </View>
        <ScrollView contentContainerStyle={{ height: '100%'}}>
         <View className="w-full h-full px-4 mt-24">
@@ -22,9 +22,9 @@ const cashInSuccess = () => {
       </ScrollView>
       <View>
         <View className="px-4 my-6">
-          <CustomButton title="Login" 
+          <CustomButton title="Back to main" 
           containerStyles="w-full bg-[#232325]" 
-          handlePress={() => router.push('auth/sign-in')} />
+          handlePress={() => router.push('dashboard/homepage')} />
         </View>
       </View>
     </SafeAreaView>
