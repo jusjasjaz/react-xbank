@@ -82,6 +82,7 @@ const profile = () => {
             handleChangeText={(e) => setForm({ ...form, email: e })}
             otherStyles="mt-7"
             keyboardType="email-address"
+            returnKeyType="done"
           />
           <FormField 
             title="MOBILE NUMBER"

@@ -15,6 +15,8 @@ import calendar from "../assets/icons/icon-calendar.png"
 import camera from "../assets/icons/icon-camera.png"
 import bank from "../assets/icons/icon-bank.png"
 import back from "../assets/icons/icon-back.png"
+import currency from "../assets/icons/icon-currency.png"
+
 export default {
   eye,
   eyeSlash,
@@ -32,5 +34,6 @@ export default {
   calendar,
   camera,
   bank,
-  back
+  back,
+  currency
 };
