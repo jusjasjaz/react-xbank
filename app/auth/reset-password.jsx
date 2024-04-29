@@ -6,6 +6,10 @@ import FormField from '../../components/FormField'
 import CustomButton from '../../components/CustomButton'
 
 const resetPassword = () => {
+  const [form, setForm] = useState({
+    email: ''
+  })
+
   return (
   <SafeAreaView className="bg-white h-full">
     <ScrollView>
@@ -16,7 +20,7 @@ const resetPassword = () => {
           title="EMAIL"
           // value={form.email}
           placeholder="enter email"
-          handleChangeTExt={(e) => setForm({ ...form,
+          handleChangeText={(e) => setForm({ ...form,
             email: e })}
             otherStyles="mt-7"
             keyboardType="email-address"

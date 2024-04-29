@@ -7,10 +7,11 @@ import FormField from '../../components/FormField'
 import CustomButton from '../../components/CustomButton'
 
 const SignIn = () => {
-  // const [form, setForm] = useState({
-  //   email: '',
-  //   password: ''
-  // })
+  const [form, setForm] = useState({
+    email: '',
+    password: ''
+  })
+  
   const [isChecked, setChecked] = useState(false);
   const router = useRouter()
   return (
@@ -23,7 +24,7 @@ const SignIn = () => {
           title="EMAIL"
           // value={form.email}
           placeholder="enter email"
-          handleChangeTExt={(e) => setForm({ ...form,
+          handleChangeText={(e) => setForm({ ...form,
             email: e })}
             otherStyles="mt-7"
             keyboardType="email-address"
@@ -32,7 +33,7 @@ const SignIn = () => {
           title="PASSWORD"
           // value={form.password}
           placeholder="enter password"
-          handleChangeTExt={(e) => setForm({ ...form,
+          handleChangeText={(e) => setForm({ ...form,
             password: e })}
             otherStyles="mt-7"
           />

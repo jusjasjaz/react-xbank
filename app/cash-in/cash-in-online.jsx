@@ -5,6 +5,7 @@ import { icons } from "../../constants"
 import { router } from 'expo-router';
 import React from 'react'
 import CustomButton from '../../components/CustomButton';
+import FormField from '../../components/FormField'
 
 const cashInOnline = () => {
   return (
@@ -17,6 +18,7 @@ const cashInOnline = () => {
         leftImageStyles="w-6 h-6"
       />
       <ScrollView>
+
         <View>
           <View className="flex-row justify-between px-4">
             <View className="flex-row align-center items-center">
