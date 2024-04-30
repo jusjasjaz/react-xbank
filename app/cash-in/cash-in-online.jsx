@@ -30,7 +30,7 @@ const cashInOnline = () => {
                 className="flex-1 ml-2 font-bInter text-2xl text-right"
                 placeholder="0.00"
                 placeholderTextColor="#cfcfcf"
-                keyboardType="numeric"
+                keyboardType="number-pad"
                 returnKeyType="done"
               />
             </View>

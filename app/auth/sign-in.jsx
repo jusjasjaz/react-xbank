@@ -22,7 +22,7 @@ const SignIn = () => {
           <Text className="text-[#413C3CCC] font-sbInter pb-14">Sign in to your account.</Text>
           <FormField 
           title="EMAIL"
-          // value={form.email}
+          //value={form.email}
           placeholder="enter email"
           handleChangeText={(e) => setForm({ ...form,
             email: e })}
@@ -31,7 +31,7 @@ const SignIn = () => {
           />
           <FormField 
           title="PASSWORD"
-          // value={form.password}
+          //value={form.password}
           placeholder="enter password"
           handleChangeText={(e) => setForm({ ...form,
             password: e })}

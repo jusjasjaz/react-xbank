@@ -18,7 +18,7 @@ const resetPassword = () => {
         <Text className="text-[#413C3CCC] font-sbInter pb-20">Reset Password</Text>
         <FormField 
           title="EMAIL"
-          // value={form.email}
+          //value={form.email}
           placeholder="enter email"
           handleChangeText={(e) => setForm({ ...form,
             email: e })}
