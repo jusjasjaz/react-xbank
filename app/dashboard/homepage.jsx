@@ -1,5 +1,5 @@
 import { ScrollView, View, Text, FlatList,ImageBackground, TouchableOpacity,Image, StyleSheet } from 'react-native'
-import React from 'react'
+import React, { useState } from 'react'
 import { SafeAreaView } from 'react-native-safe-area-context'
 import { images } from '../../constants';
 import { icons } from "../../constants"
@@ -57,6 +57,7 @@ const transactions = [
 ];
 
 const homepage = () => {
+  const[status, setStatus] = React.useState(false);
   return (
     <SafeAreaView className="bg-white h-full">
       <Header 
@@ -124,7 +125,7 @@ const homepage = () => {
           <View className="border-t border-[#F2F2F2] my-4"></View>
           <View className="flex-row justify-between py-2">
             <Text className="uppercase font-bInter text-[#3B3B3B">Latest Activities</Text>
-            <TouchableOpacity>
+            <TouchableOpacity onPress={() => setStatus(true)}>
               <Text className="uppercase font-bInter">SEE ALL</Text>
             </TouchableOpacity>
           </View>
@@ -146,7 +147,8 @@ const homepage = () => {
           </View>
         </View>
       </ScrollView>
-      <BottomSheet />
+      
+      {status && <BottomSheet setStatus={ setStatus} /> }
     </SafeAreaView>
   )
 }
