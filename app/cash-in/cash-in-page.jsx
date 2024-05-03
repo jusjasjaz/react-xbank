@@ -27,8 +27,8 @@ const cashInPage = () => {
             <TouchableOpacity onPress={() => onSegmentClick('Online')} style={{ ...styles.tabLink, ...(activeSegment === 'Online' ? styles.activeTab : {}) }}>
               <Text className="font-mInter" style={[styles.tabText, { color: activeSegment === 'Online' ? '#000000' : '#828282' }]}>Online</Text>
             </TouchableOpacity>
-            <TouchableOpacity onPress={() => onSegmentClick('Over-The-Counter')} style={{ ...styles.tabLink, ...(activeSegment === 'Over-The-Counter' ? styles.activeTab : {}) }}>
-              <Text className="font-mInter" style={[styles.tabText, { color: activeSegment === 'Over-The-Counter' ? '#000000' : '#828282' }]}>Withdraw from Game</Text>
+            <TouchableOpacity onPress={() => onSegmentClick('Withdraw-From-Game')} style={{ ...styles.tabLink, ...(activeSegment === 'Withdraw-From-Game' ? styles.activeTab : {}) }}>
+              <Text className="font-mInter" style={[styles.tabText, { color: activeSegment === 'Withdraw-From-Game' ? '#000000' : '#828282' }]}>Withdraw from Game</Text>
             </TouchableOpacity>
           </View>
           {activeSegment === 'Online' && (
@@ -71,10 +71,10 @@ const cashInPage = () => {
               <View className="border-t border-[#F2F2F2] my-4"></View>
             </View>
           )}
-          {activeSegment === 'Over-The-Counter' && (
+          {activeSegment === 'Withdraw-From-Game' && (
             <View className="px-4">
               <View>
-                <Text>Over-The-Counter</Text>
+                <Text>Withdraw-From-Game</Text>
               </View>
             </View>
           )}
