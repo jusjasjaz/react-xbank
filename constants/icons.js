@@ -16,6 +16,7 @@ import camera from "../assets/icons/icon-camera.png"
 import bank from "../assets/icons/icon-bank.png"
 import back from "../assets/icons/icon-back.png"
 import currency from "../assets/icons/icon-currency.png"
+import close from "../assets/icons/icon-close.png"
 
 export default {
   eye,
@@ -35,5 +36,6 @@ export default {
   camera,
   bank,
   back,
-  currency
+  currency,
+  close
 };

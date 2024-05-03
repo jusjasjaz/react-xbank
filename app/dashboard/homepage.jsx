@@ -5,6 +5,8 @@ import { images } from '../../constants';
 import { icons } from "../../constants"
 import { router } from 'expo-router';
 import Header from '../../components/Header'
+import BottomSheet from '../../components/BottomSheet'
+
 const transactions = [
   {
   id: 0,
@@ -144,6 +146,7 @@ const homepage = () => {
           </View>
         </View>
       </ScrollView>
+      <BottomSheet />
     </SafeAreaView>
   )
 }

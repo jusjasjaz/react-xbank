@@ -14,6 +14,7 @@ module.exports = {
         sbInter: ["Inter-SemiBold", "sans-serif"], //600
         bInter: ["Inter-Bold", "sans-serif"], //700
         ebInter: ["Inter-ExtraBold", "sans-serif"], //800
+        chivo: ["Chivo-Regular", "sans-serif"]
       }
     },
   },

@@ -12,6 +12,7 @@ const RootLayout = () => {
     "Inter-SemiBold": require('../assets/fonts/Inter-SemiBold.ttf'),
     "Inter-Bold": require('../assets/fonts/Inter-Bold.ttf'),
     "Inter-ExtraBold": require('../assets/fonts/Inter-ExtraBold.ttf'),
+    "Chivo-Regular": require('../assets/fonts/Chivo-Regular.ttf'),
   })
   useEffect(() => {
     if (error) throw error;

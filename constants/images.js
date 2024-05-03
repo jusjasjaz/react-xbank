@@ -5,6 +5,8 @@ import card from  "../assets/images/card.png"
 import scanButton from "../assets/images/scan-btn.png"
 import userProfile  from "../assets/images/user-profile.png"
 import profilePic from "../assets/images/profile-picture.png"
+import cards from "../assets/images/cards.png"
+import friends from "../assets/images/friends.png"
 export default {
   success,
   transactionSuccess,
@@ -12,5 +14,7 @@ export default {
   card,
   scanButton,
   userProfile,
-  profilePic
+  profilePic,
+  cards,
+  friends
 }
