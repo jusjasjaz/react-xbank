@@ -17,7 +17,7 @@ const BottomSheet = () => {
           <Text className="font-chivo font-normal">My Cards</Text>
         </View>
         <TouchableOpacity activeOpacity={0.5}>
-          <View className="flex-row items-center mt-5 justify-center">
+          <View className="flex-row items-center mt-8 justify-center">
             <Image className="w-3 h-3 mr-2" source={icons.close}/>
             <Text>Close</Text>
           </View>
