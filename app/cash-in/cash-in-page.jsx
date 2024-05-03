@@ -8,11 +8,9 @@ import { icons } from "../../constants"
 const cashInPage = () => {
   const [activeSegment, setActiveSegment] = useState('Online');
 
- 
   const onSegmentClick = (segment) => {
     setActiveSegment(segment);
   };
-
 
   return (
     <SafeAreaView className="bg-white h-full">
